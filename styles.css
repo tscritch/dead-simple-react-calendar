@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Rubik&display=swap");
+
+* {
+  user-select: none;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.controls {
+  width: 234px;
+  padding: 0 2px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Serif Display";
+  margin-bottom: 4px;
+}
+
+.controls-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-family: "Rubik";
+  color: #808080;
+  background-color: #e9e8e8;
+  border-radius: 4px;
+  transition: all 0.15s ease-in-out;
+}
+
+.controls-button:hover {
+  background-color: #c7c7c7;
+  cursor: pointer;
+}
+
+.week {
+  display: flex;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  font-family: Rubik;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+}
+
+.day:hover {
+  color: rgb(32, 108, 250);
+  border-color: rgb(32, 108, 250);
+  background-color: rgb(206, 223, 255);
+  cursor: pointer;
+}
+
+.day-previous-month {
+  color: rgb(204, 204, 204);
+  border-color: rgb(204, 204, 204);
+}
+
+.day-next-month {
+  color: rgb(204, 204, 204);
+  border-color: rgb(204, 204, 204);
+}
+
+.day-selected,
+.day-selected:hover {
+  color: rgb(255, 255, 255);
+  border-color: rgb(32, 108, 250);
+  background-color: rgb(0, 87, 250);
+}
